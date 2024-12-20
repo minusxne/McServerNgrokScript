@@ -3,9 +3,9 @@ tmux split-window -h -t minecraft        # Pane 1: right side
 tmux split-window -v -t minecraft:0.0    # Pane 0: left top
 
 # Pane 0: Run the Minecraft server (server.jar)
-tmux send-keys -t minecraft:0.0 "cd ~/Downloads/ChristmasServer" C-m
+tmux send-keys -t minecraft:0.0 "cd ~/Downloads/ChristmasSv" C-m
 sleep 1
-tmux send-keys -t minecraft:0.0 "bash start.sh" C-m
+tmux send-keys -t minecraft:0.0 "java -Xmx12G -Xms8G -jar fabric-server-mc.1.21.1-loader.0.16.9-launcher.1.0.1.jar nogui " C-m
 
 # Pane 1: Run ngrok on TCP port 25565
 tmux send-keys -t minecraft:0.1 "ngrok tcp 25565 --log=stdout | grep url=" C-m
