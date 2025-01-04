@@ -14,7 +14,7 @@ This script only works under the following conditions:
 1. Clone the repository or download the script.
 
     ```bash
-   git clone https://github.com/minusonee/McServerNgrokScript
+   git clone https://github.com/minusxne/McServerNgrokScript
    ```
 
 2. Open the script in your favorite text editor.
